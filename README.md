@@ -1,5 +1,5 @@
 # SDGO
-The code and datasets of our EMNLP 2025 paper "SDGO: Self-Discrimination-Guided Optimization for Consistent Safety in Large Language Models".
+The code and datasets of our EMNLP 2025 paper "[SDGO: Self-Discrimination-Guided Optimization for Consistent Safety in Large Language Models](https://arxiv.org/abs/2508.15648)".
 
 ![EMNLP 2025](https://img.shields.io/badge/EMNLP-2025-blue.svg?style=plastic)
 ![LLM Safety](https://img.shields.io/badge/LLM-Safety-yellow.svg?style=plastic)
