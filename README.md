@@ -14,8 +14,6 @@ leverages the model’s strong discrimination capabilities to enhance its genera
 annotated data or models, improving safety while maintaining general capabilities; (bottom) the consistency in
 safety discrimination and generative behaviors exhibited by the LLM after applying SDGO.
 
-Here's the cleaned up version with icons only for major sections:
-
 ## Usage
 
 ### 🔍 1. Revealing Safety Inconsistency in LLMs
