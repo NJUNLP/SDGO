@@ -13,3 +13,39 @@ yet still successfully bypasses defenses; (middle) our proposed SDGO reinforceme
 leverages the model’s strong discrimination capabilities to enhance its generation safety without requiring additional
 annotated data or models, improving safety while maintaining general capabilities; (bottom) the consistency in
 safety discrimination and generative behaviors exhibited by the LLM after applying SDGO.
+
+## Usage
+
+### 1. Revealing Safety Inconsistency in LLMs
+
+You can use the `src/revealing_safety_inconsistency/gap_analysis.ipynb` script to analyze the safety gaps of any LLMs accessible through API, generating bar charts similar to Figure 1 in our paper, for example:
+
+...
+
+### 2. Training
+
+We use an internal reinforcement learning framework developed by our company for training, so we apologize for not being able to provide the complete training code. However, theoretically, any open-source framework that supports Generative Reward Modeling (GRM) and GRPO can implement SDGO training, such as [Verl](https://github.com/volcengine/verl) and [EasyR1](https://github.com/hiyouga/EasyR1). 
+
+We provide SDGO training data under `datasets/train`, and detailed training parameters are provided in the paper's appendix. What you need to do is simple adaptation operations: including modifying the reward function and model scoring, then you can easily train SDGO. If time permits, we will also reproduce SDGO on open-source frameworks in the future, so stay tuned.
+
+### 3. Inference and Evaluation
+
+Once you complete SDGO training, you can perform the following evaluations:
+
+1. Safety evaluation
+2. Helpfulness evaluation  
+3. OOD attack evaluation
+
+We use LLaMA-Factory for inference and SFT. Follow these steps to implement all the above evaluations:
+
+1. Install LLaMA-Factory according to the official guide: https://github.com/hiyouga/LLaMA-Factory
+
+2. Put all json files under `data/test/` into the `LLaMA-Factory/data/` directory and register them in `LLaMA-Factory/data/dataset_info.json`
+
+3. Put `sdgo_infer_and_eval.py`, `sdgo_helpful_eval.py`, `sdgo_safety_gap.py` from `src/` and `sdgo_run.sh` from `scripts/` into the `LLaMA-Factory/` directory, then run:
+
+   ```bash
+   bash sdgo_run.sh
+   ```
+
+   You can get all evaluation results and metrics, which will be displayed in the terminal and saved to the corresponding folders in `LLaMA-Factory/`.
