@@ -26,7 +26,7 @@ You can use the `src/revealing_safety_inconsistency/gap_analysis.ipynb` script t
 
 We use an internal reinforcement learning framework developed by our company for training, so we apologize for not being able to provide the complete training code. However, theoretically, any open-source framework that supports Generative Reward Modeling (GRM) and GRPO can implement SDGO training, such as [Verl](https://github.com/volcengine/verl) and [EasyR1](https://github.com/hiyouga/EasyR1). 
 
-We provide SDGO training data under `datasets/train`, and detailed training parameters are provided in the paper's appendix. What you need to do is simple adaptation operations: including modifying the reward function and model scoring, then you can easily train SDGO. If time permits, we will also reproduce SDGO on open-source frameworks in the future, please stay tuned.
+We provide SDGO training data under `datasets/train`, and detailed training parameters are provided in the paper's appendix. What you need to do is simple adaptation operations: including modifying the reward function and model scoring, then you can easily train SDGO. If you encounter any issues during the training process, please feel free to contact dingpeng@smail.nju.edu.cn. We will also reproduce SDGO on open-source frameworks in the future, please stay tuned.
 
 ### 📊 3. Inference and Evaluation
 
