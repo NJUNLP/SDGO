@@ -10,6 +10,13 @@ This repository contains scripts for analyzing the distribution of Safety gaps i
   - `GPT-4.1`
   - `DeepSeek-R1`
 
+## Dataset
+
+The `renellm_random_500.json` file contains 500 samples randomly selected from the [ReNeLLM-Jailbreak dataset](https://huggingface.co/datasets/Deep1994/ReNeLLM-Jailbreak). This dataset is from the paper:
+
+**"A Wolf in Sheep's Clothing: Generalized Nested Jailbreak Prompts can Fool Large Language Models Easily"**  
+Paper: https://arxiv.org/abs/2311.08268
+
 ## Usage
 
 The `gap_analysis.ipynb` notebook provides a comprehensive framework for:
