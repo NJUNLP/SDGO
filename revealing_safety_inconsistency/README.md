@@ -14,7 +14,7 @@ This repository contains scripts for analyzing the distribution of Safety gaps i
 
 The `renellm_random_500.json` file contains 500 samples randomly selected from the [ReNeLLM-Jailbreak dataset](https://huggingface.co/datasets/Deep1994/ReNeLLM-Jailbreak). This dataset is from the paper:
 
-**"A Wolf in Sheep's Clothing: Generalized Nested Jailbreak Prompts can Fool Large Language Models Easily"**  
+**"A Wolf in Sheep's Clothing: Generalized Nested Jailbreak Prompts can Fool Large Language Models Easily"** (NAACL 2024)
 Paper: https://arxiv.org/abs/2311.08268
 
 ## Usage
