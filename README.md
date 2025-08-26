@@ -6,4 +6,10 @@ The code and datasets of our EMNLP 2025 paper "[SDGO: Self-Discrimination-Guided
 ![Safety Consistency](https://img.shields.io/badge/Safety-Consistency-orange.svg?style=plastic)
 ![Safety and Alignment](https://img.shields.io/badge/Safety-Alignment-green.svg?style=plastic)
 
-Coming soon...
+![](SDGO.png)
+
+This figure illustrates (top) the model’s safety inconsistency, where harmful content is correctly identified
+yet still successfully bypasses defenses; (middle) our proposed SDGO reinforcement learning framework, which
+leverages the model’s strong discrimination capabilities to enhance its generation safety without requiring additional
+annotated data or models, improving safety while maintaining general capabilities; (bottom) the consistency in
+safety discrimination and generative behaviors exhibited by the LLM after applying SDGO.
