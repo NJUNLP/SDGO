@@ -1,6 +1,6 @@
 # LLM Safety Gap Analysis
 
-This repository contains scripts for analyzing the distribution of Safety gaps in LLMs. The main analysis is provided in `gap_analysis.ipynb`, which allows you to analyze and visualize security gaps for any LLM accessible via API calls.
+This repository contains scripts for analyzing the distribution of Safety gaps in LLMs. The main analysis is provided in `gap_analysis.ipynb`, which allows you to analyze and visualize safety gap for any LLM accessible via API calls.
 
 ## Contents
 
